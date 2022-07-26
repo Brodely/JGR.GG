@@ -1,0 +1,122 @@
+.home-section{
+    background-image: url(../../img/fjugador/sofu-jar.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.estadisticas{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -15px;
+    padding-top: 60px;
+    margin-left: -50px;
+    padding-left: 50px;
+    padding-bottom: 40px;
+    background-color: black;
+}
+
+.col{
+    color: white;
+    padding: 0px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.coluno{
+    width: 20%;
+    margin-right: 40px;
+}
+
+.coldos{
+    width: 20%;
+}
+
+.coltres{
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 18%;
+}
+
+.colcuatro{
+    margin-left: 40px;
+    width: 25%
+}
+
+.campeones{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0;
+}
+
+.campeon{
+    margin-bottom: 5px;
+    width: 45px;
+    height: 45px;
+}
+
+.campeon1{
+    background: url(../../img/champs/PykeSquare.webp);
+    background-size: cover;
+}
+
+.campeon2{
+    background: url(../../img/champs/RakanSquare.webp);
+    background-size: cover;
+}
+
+.campeon3{
+    background: url(../../img/champs/ThreshSquare.webp);
+    background-size: cover;
+}
+
+.campeon4{
+    background: url(../../img/champs/BardSquare.webp);
+    background-size: cover;
+}
+
+.campeon5{
+    background: url(../../img/champs/BraumSquare.webp);
+    background-size: cover;
+}
+
+.campeon6{
+    background: url(../../img/champs/LuxSquare.webp);
+    background-size: cover;
+}
+
+.campeon7{
+    background: url(../../img/champs/NautilusSquare.webp);
+    background-size: cover;
+}
+
+.campeon8{
+    background: url(../../img/champs/LeonaSquare.webp);
+    background-size: cover;
+}
+
+.campeon9{
+    background: url(../../img/champs/AlistarSquare.webp);
+    background-size: cover;
+}
+
+.campeon10{
+    background: url(../../img/champs/Tahm_KenchSquare.webp);
+    background-size: cover;
+}
+
+.home-section::-webkit-scrollbar{
+    width: 12px;
+}
+
+.home-section::-webkit-scrollbar-track{
+    background: black;
+}
+
+.home-section::-webkit-scrollbar-thumb{
+    background-color: rgb(29, 175, 102);
+    border-radius: 10px;
+}
+
+

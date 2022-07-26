@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="estilos/dashboard.css">
+     
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Dashboard JGR</title> 
+
+            <script type="text/javascript" src="sesion.js"></script>
+          <script type="text/javascript" src="bd.js"></script>
+          <script type="text/javascript" src="consultar.js"></script>
+          <script src="jugadores/bd2.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="img/1x/logo-jgr-o.png" alt="">
+            </div>
+
+            <span class="logo_name">JGR.GG</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="#">
+                    <i class='bx bx-grid-alt' ></i>
+                    <span class="link-name">Dahsboard</span>
+                </a></li>
+                <li><a href="principal.html">
+                    <i class='bx bx-collection' ></i>
+                    <span class="link-name">Jugadores</span>
+                </a></li>
+                <li><a href="ranking.html">
+                    <i class='bx bx-compass' ></i>
+                    <span class="link-name">Ranking</span>
+                </a></li>
+                <li><a href="edit-admins.html">
+                    <i class='bx bx-cog' ></i>
+                    <span class="link-name">Editar</span>
+                </a></li>
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="principal.html">
+                    <i class='bx bx-log-out'></i>
+                    <span class="link-name">Salir</span>
+                </a></li>
+
+                <li class="mode">
+                        
+                </li>      
+                
+
+                <div class="mode-toggle">
+                  
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="top">
+            
+            <i class="uil uil-bars sidebar-toggle bx bx-menu"></i>
+            <div class="dropdown-field">
+                <select id="txt1">
+
+                    <option value="Conta">Conta</option>
+                    <option value="YinExnaider">YinExnaider</option>
+                    <option value="DEADMAN">DEADMAN</option>
+                    <option value="Thiaf">Thiaf</option>
+                    <option value="Patimomo">Patimomo</option>
+                    <option value="Naranjitas">Naranjitas</option>
+                    <option value="Kings">Kings</option>
+                    <option value="Tubal">Tubal</option>
+                    <option value="SkeletonB">SkeletonB</option>
+                    <option value="Lufi">Lufi</option>
+                    <option value="Blax">Blax</option>
+                    <option value="Novato">Novato</option>
+                    <option value="Sofu Jar">Sofu Jar</option>
+
+                </select>
+            </div>
+            <span class="text">Administrador</span>
+            <img src="img/iconjugador/blax.webp" alt="">
+        </div>
+
+        <div class="dash-content">
+            <div class="overview">
+                <div class="title">
+                    <span class="text">Jugadores JGR</span>
+                    
+                    
+                </div>
+
+                <div class="boxes">
+                    <div class="box box1">
+                        <div class="l-form">
+                            <form action="" class="form">
+                                <h1 class="form__title">SKILLS</h1>
+                                <div class="form__div">
+                                    <input type="text" class="form__input" placeholder=" " id="txtmicro">
+                                    <label for="" class="form__label">MICRO</label>
+                                </div>
+                
+                                <div class="form__div">
+                                    <input type="text" class="form__input" placeholder=" " id="txtmacro">
+                                    <label for="" class="form__label">MACRO</label>
+                                </div>
+                                <div class="form__div">
+                                    <input type="text" class="form__input" placeholder=" " id="txtlanning">
+                                    <label for="" class="form__label">LANNING</label>
+                                </div>
+                                <div class="boton-mover">
+                                    <button onclick="actualizarD()">
+                                        <div>
+                                          <span></span>
+                                          <a href ="#">Actualizar</a>
+                                        </div>
+                                    </button>
+                                </div>
+                                
+                            </form>
+                        </div>
+                    </div>
+                    <div class="box box2">
+                        <div class="l-form">
+                            <form action="" class="form">
+                                <h1 class="form__title">ESTADISTICAS</h1>
+                                <div class="form__div">
+                                    <input type="text" class="form__input" placeholder=" " id="txtkda">
+                                    <label for="" class="form__label">KDA</label>
+                                </div>
+                
+                                <div class="form__div">
+                                    <input type="text" class="form__input" placeholder=" " id="txtopscore">
+                                    <label for="" class="form__label">OpScore</label>
+                                </div>
+                                <div class="form__div">
+                                    <input type="text" class="form__input" placeholder=" " id="txtkillp">
+                                    <label for="" class="form__label">Kill Participation</label>
+                                </div>
+                                <div class="form__div">
+                                    <input type="text" class="form__input" placeholder=" " id="txtpuntosv">
+                                    <label for="" class="form__label">Puntos de Visión</label>
+                                </div>
+                
+                                <button onclick="actualizar()">
+                                    <div>
+                                      <span></span>
+                                      <a href ="#">Actualizar</a>
+                                    </div>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="box box3">
+                        <div class="l-form">
+                            <form action="" class="form">
+                                <h1 class="form__title">KDA</h1>
+                                <div class="form__div">
+                                    <input type="text" class="form__input" placeholder=" " id="txtasesinatos">
+                                    <label for="" class="form__label">Asesinatos</label>
+                                </div>
+                                <div class="form__div">
+                                    <input type="text" class="form__input" placeholder=" " id="txtasistencias">
+                                    <label for="" class="form__label">Asistencias</label>
+                                </div>
+                                <div class="form__div">
+                                    <input type="text" class="form__input" placeholder=" " id="txtmuertes">
+                                    <label for="" class="form__label">Muertes</label>
+                                </div>
+                
+                                
+                                <button onclick="actualizarKDA()">
+                                    <div>
+                                      <span></span>
+                                      <a href ="#">Actualizar</a>
+                                    </div>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity">
+                <div class="title">
+                    
+                    <span class="text">Administradores JGR</span>
+                </div>
+
+                <div class="activity-data">
+                    <div class="data names" id="agregaruser">
+                        <span class="data-title">Usuario</span>
+                        <span class="data-list" id="user1">Null</span>
+                        <span class="data-list" id="user2">Null</span>
+                        <span class="data-list" id="user3">Null</span>
+                        <span class="data-list" id="user4">Null</span>
+                        <span class="data-list" id="user5">Null</span>
+                        
+                    </div>
+                    <div class="data email">
+                        <span class="data-title">Contraseña</span>
+                        <span class="data-list" id="pass1">Null</span>
+                        <span class="data-list" id="pass2">Null</span>
+                        <span class="data-list" id="pass3">Null</span>
+                        <span class="data-list" id="pass4">Null</span>
+                        <span class="data-list" id="pass5">Null</span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="opciones">
+                <button onclick="location.href = 'edit-admins.html'">
+                    <div>
+                      <span></span>
+                      <a>Eliminar / Actualizar / Agregar</a>
+                    </div>
+                </button>
+            </div>
+            
+        </div>
+    </section>
+
+    <script src="scripts/dashboard.js"></script>
+</body>
+</html>

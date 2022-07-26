@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking</title>
+    <script src="scripts/barra.js"  defer></script>
+    <link rel="stylesheet" href="estilos/barra.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="estilos/rank.css">
+    
+    
+    <script src="scriptarbol.js"></script>
+          <script type="text/javascript" src="sesion.js"></script>
+          <script type="text/javascript" src="bd.js"></script>
+          <script type="text/javascript" src="consultar.js"></script>
+          <script src="jugadores/bd2.js"></script>
+</head>
+<body>
+    <div class="sidebar close">
+
+        <div class="logo-details">
+          <img src="img/1x/logo-jgr-o.png" alt="">
+          <span class="logo_name">JGR.GG</span>
+        </div>
+    
+    
+        <ul class="nav-links">
+    
+          <li>
+            <a href="principal.html">
+              <i class='bx bx-grid-alt' ></i>
+              <span class="link_name">Jugadores</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Jugadores</a></li>
+            </ul>
+          </li>
+    
+          <li>
+            <div class="iocn-link">
+              <a href="#">
+                <i class='bx bx-collection' ></i>
+                <span class="link_name">Ranking</span>
+              </a>
+              
+            </div>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Ranking</a></li>
+              
+            </ul>
+          </li>
+          
+          <li>
+            <a href="https://www.youtube.com/watch?v=2xzBa7WjNSk&list=PLDSXILfy4BHGJhBCUpuZstIgyEl6TueGY" target="_blank">
+              <i class='bx bxl-youtube' ></i>
+              <span class="link_name">Tacticas</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="https://www.youtube.com/watch?v=2xzBa7WjNSk&list=PLDSXILfy4BHGJhBCUpuZstIgyEl6TueGY" target="_blank">Tacticas</a></li>
+            </ul>
+          </li>
+    
+          <li>
+            <a href="index.html">
+              <i class='bx bx-compass' ></i>
+              <span class="link_name">Administrador</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Administrador</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="#">
+              <i class='bx bx-cog' ></i>
+              <span class="link_name">Configuración</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Configuración</a></li>
+            </ul>
+          </li>
+    
+          <li>
+            <div class="profile-details">
+              <div class="profile-content">
+                <img src="img/icon.png" alt="profileImg">
+              </div>
+            <div class="name-job">
+              <div class="profile_name">Jugador</div>
+              <div class="job">Imperial Jaguars</div>
+            </div>
+              <i>
+              </i>
+            </div>
+          </li>
+        </ul>
+    </div>
+
+    <section class="home-section">
+        <div class="home-content">
+          <i class='bx bx-menu' ></i>
+          <span class="text"></span>
+          
+        </div>
+        <div class="inner" id="insertar">
+          <h3>MEJORES PLAYERS JGR</h3>
+          <div class="separador"></div>
+            
+      </div>
+      <div class="ranking">
+        <div class="rank-box">
+          <img src="img/champs/AlistarSquare.webp" alt="" id="img13">
+          <h5 id="nick13">Nickame</h5>
+          <h4 id="parrafo13">50</h4>
+        </div>
+        <div class="rank-box">
+          <img src="img/champs/AlistarSquare.webp" alt="" id="img12">
+          <h5 id="nick12">Nickame</h5>
+          <h4 id="parrafo12">50</h4>
+        </div>
+        <div class="rank-box">
+          <img src="img/champs/AlistarSquare.webp" alt="" id="img11">
+          <h5 id="nick11">Nickame</h5>
+          <h4 id="parrafo11">50</h4>
+        </div>
+        <div class="rank-box">
+          <img src="img/champs/AlistarSquare.webp" alt="" id="img10">
+          <h5 id="nick10">Nickame</h5>
+          <h4 id="parrafo10">50</h4>
+        </div>
+        <div class="rank-box">
+          <img src="img/champs/AlistarSquare.webp" alt="" id="img9">
+          <h5 id="nick9">Nickame</h5>
+          <h4 id="parrafo9">50</h4>
+        </div>
+        <div class="rank-box">
+          <img src="img/champs/AlistarSquare.webp" alt="" id="img8">
+          <h5 id="nick8">Nickame</h5>
+          <h4 id="parrafo8">50</h4>
+        </div>
+        <div class="rank-box">
+          <img src="img/champs/AlistarSquare.webp" alt="" id="img7">
+          <h5 id="nick7">Nickame</h5>
+          <h4 id="parrafo7">50</h4>
+        </div>
+        <div class="rank-box">
+          <img src="img/champs/AlistarSquare.webp" alt="" id="img6">
+          <h5 id="nick6">Nickame</h5>
+          <h4 id="parrafo6">50</h4>
+        </div>
+        <div class="rank-box">
+          <img src="img/champs/AlistarSquare.webp" alt="" id="img5">
+          <h5 id="nick5">Nickame</h5>
+          <h4 id="parrafo5">50</h4>
+        </div>
+        <div class="rank-box">
+          <img src="img/champs/AlistarSquare.webp" alt="" id="img4">
+          <h5 id="nick4">Nickame</h5>
+          <h4 id="parrafo4">50</h4>
+        </div>
+        <div class="rank-box">
+          <img src="img/champs/AlistarSquare.webp" alt="" id="img3">
+          <h5 id="nick3">Nickame</h5>
+          <h4 id="parrafo3">50</h4>
+        </div>
+        <div class="rank-box">
+          <img src="img/champs/AlistarSquare.webp" alt="" id="img2">
+          <h5 id="nick2">Nickame</h5>
+          <h4 id="parrafo2">50</h4>
+        </div>
+        <div class="rank-box ultimo">
+          <img src="img/champs/AlistarSquare.webp" alt="" id="img1">
+          <h5 id="nick1">Nickame</h5>
+          <h4 id="parrafo1">50</h4>
+        </div>
+      </div>
+            
+          
+    </section>
+</body>
+</html>

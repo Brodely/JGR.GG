@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="estilos/dashboard.css">
+     
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Dashboard JGR</title> 
+
+    <script type="text/javascript" src="sesion.js"></script>
+          <script type="text/javascript" src="bd.js"></script>
+          <script type="text/javascript" src="consultar.js"></script>
+          <script src="jugadores/bd2.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="img/1x/logo-jgr-o.png" alt="">
+            </div>
+
+            <span class="logo_name">JGR.GG</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="dashboard.html">
+                    <i class='bx bx-grid-alt' ></i>
+                    <span class="link-name">Dahsboard</span>
+                </a></li>
+                <li><a href="#">
+                    <i class='bx bx-collection' ></i>
+                    <span class="link-name">Jugadores</span>
+                </a></li>
+                <li><a href="#">
+                    <i class='bx bx-compass' ></i>
+                    <span class="link-name">Ranking</span>
+                </a></li>
+                <li><a href="#">
+                    <i class='bx bx-cog' ></i>
+                    <span class="link-name">Editar</span>
+                </a></li>
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="principal.html">
+                    <i class='bx bx-log-out'></i>
+                    <span class="link-name">Salir</span>
+                </a></li>
+
+                <li class="mode">
+                        
+                        
+                </a>
+
+                <div class="mode-toggle">
+                  
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle bx bx-menu"></i>
+            
+            
+        </div>
+
+        <div class="dash-content">
+            <div class="overview">
+                <div class="title">
+                    <span class="text">CUENTAS DE ADMINISTRADORES </span>
+                    
+                    
+                </div>
+
+                <div class="boxes">
+                    <div class="box box3">
+                        <div class="l-form">
+                            <form action="" class="form">
+                                <h1 class="form__title">AGREGAR ADMINISTRADOR</h1>
+                                <div class="form__div">
+                                    <input type="text" class="form__input" placeholder=" " id="RUser">
+                                    <label for="" class="form__label">USUARIO</label>
+                                </div>
+                                <div class="form__div">
+                                    <input type="text" class="form__input" placeholder=" " id="RPass">
+                                    <label for="" class="form__label">CONTRASEÑA</label>
+                                </div>
+                                <div class="form__div">
+                                    <input type="text" class="form__input" placeholder=" " id="RCPass">
+                                    <label for="" class="form__label">CONFIRMAR CONTRASEÑA</label>
+                                </div>
+                                
+                
+                                <button onclick="registrar()">
+                                    <div>
+                                      <span></span>
+                                      <a href ="#">Actualizar</a>
+                                    </div>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="box box1">
+                        <div class="l-form">
+                            <form action="" class="form">
+                                <h1 class="form__title">ACTUALIZAR CONTRASEÑA</h1>
+                                <div class="form__div">
+                                    <input type="text" class="form__input" placeholder=" " id="nombreact">
+                                    <label for="" class="form__label">USUARIO</label>
+                                </div>
+                
+                                <div class="form__div">
+                                    <input type="text" class="form__input" placeholder=" " id="actpass">
+                                    <label for="" class="form__label">NUEVA CONTRASEÑA</label>
+                                </div>
+                
+                                <button onclick="recuperar()">
+                                    <div>
+                                      <span></span>
+                                      <a href ="#">Actualizar</a>
+                                    </div>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="box box2">
+                        <div class="l-form">
+                            <form action="" class="form">
+                                <h1 class="form__title">ELIMINAR ADMINISTRADOR</h1>
+                                <div class="form__div">
+                                    <input type="text" class="form__input" placeholder=" " id="nombredelete">
+                                    <label for="" class="form__label">USUARIO</label>
+                                </div>
+                
+                
+                                <button onclick="eliminar()">
+                                    <div>
+                                      <span></span>
+                                      <a href ="#">Actualizar</a>
+                                    </div>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+            
+        </div>
+    </section>
+
+    <script src="scripts/dashboard.js"></script>
+</body>
+</html>

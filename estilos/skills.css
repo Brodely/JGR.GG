@@ -1,0 +1,129 @@
+.progress{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container{
+    width: 150px;
+    display: flex;
+    border-radius: 8px;
+    row-gap: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+.circular-progress{
+    position: relative;
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    background: conic-gradient(#ededed 3.6deg, #ededed 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circular-progress::before{
+    content: "";
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: black;
+}
+.progress-value{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.text{
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+}
+
+.circular-progress2{
+    position: relative;
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    background: conic-gradient(#ededed 3.6deg, #ededed 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circular-progress2::before{
+    content: "";
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: black;
+}
+.progress-value2{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.circular-progress3{
+    position: relative;
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    background: conic-gradient(#ededed 3.6deg, #ededed 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circular-progress3::before{
+    content: "";
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: black;
+}
+.progress-value3{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.circular-progresss{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: conic-gradient(#ededed 3.6deg, #ededed 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circular-progresss::before{
+    content: "";
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background-color: black;
+}
+.progress-values{
+    position: relative;
+    font-weight: 600;
+    color: white;
+}
+
+.circular-progresss span{
+    font-size: 25px;
+}
+
+.container .textn{
+    font-size: 25px;
+}
+
+
+
+

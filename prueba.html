@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN DASHBOARD</title>
+    <link rel="stylesheet" href="estilos/admin.css">
+    <link rel="stylesheet" href="estilos/admin-2.css">
+    <script src="scripts/script.js"></script>
+    
+
+    <script type="text/javascript" src="sesion.js"></script>
+          <script type="text/javascript" src="bd.js"></script>
+          <script type="text/javascript" src="consultar.js"></script>
+          <script src="jugadores/bd2.js"></script>
+</head>
+<body>
+    <style>
+        body{
+            margin-left: 40px;  
+            margin-top: 30px;
+        }
+
+        .link{
+            font-weight: 600;
+            color: #f3ca4c;
+        }
+    </style>
+    <h1>PANEL DE ADMIN</h1>
+    <a href="dashboard.html" rel="noopener noreferrer" class="link">Dashboard 1.0.2</a>
+    <br>
+    <a href="principal.html" rel="noopener noreferrer" class="link">Regresar</a>
+    <br><br>
+      <h2>AGREGAR ADMINISTRADOR</h2>
+    <form class="formulario" action="index.html" method="post">
+      <label>Usuario: </label><input type="text" name="usuario" id="RUser" placeholder="Colocar usuario"></td>
+    
+    
+        <label>Contraseña: </label><input type="password"  name="pass" id="RPass" placeholder="Colocar contraseña"></td>
+
+        <label>Confirmar contraseña: </label><input type="password"  name="pass" id="RCPass" placeholder="contraseña"></td>
+
+        <label>Campeon: </label><input type="text"  name="pass" id="RChamp" placeholder="Campeon"></td>
+
+        <br>
+        <br>
+        <button onclick="registrar()">
+            <div>
+                <span></span>
+                <a href="#">Registrar nuevo admin</a>
+            </div> 
+        </button>
+
+      <!--      <input type="button" name="btnconsultar" id="btrconsultar" onclick="consultar()" value="consultar">-->
+          <ul class="error" id="error"></ul>
+    </form>
+
+    
+    <table id="Tabla">
+    <th>Usuario</th>
+    <th>Contraseña</th>
+    <th>Campeon</th>
+    </table>
+    <br>
+    <button onclick="iniciosesion()">
+        <div>
+            <span></span>
+            <a href="#">VER ADMINS</a>
+        </div> 
+    </button>
+    <!--
+
+    <label>BUSCAR</label>
+       
+    <input type="text" class="input" placeholder="User" id="txtbuscar">
+    
+    <button class="button is-success" type="button" onclick="buscar()">BUSCAR</button>
+    <div>
+        <br>
+        <br>
+        <table id="table2">
+            <tr>
+
+                <th>Usuarios</th>
+            </tr>
+        </table>
+    </div>
+-->
+<br>
+<br>
+<br>
+<input type="text" id="nombredelete" placeholder="Nombre admin">
+<button onclick="eliminar()">
+    <div>
+        <span></span>
+        <a href="#">Eliminar admin</a>
+    </div> 
+</button>
+<br><br>
+<br>
+<input type="text" id="nombreact" placeholder="Nombre admin">
+<input type="text" id="actpass" placeholder="Nueva contraseña">
+<button onclick="recuperar()">
+    <div>
+        <span></span>
+        <a href="#">Actualizar contraseña</a>
+    </div> 
+</button>
+
+
+    <form class="box">
+        <div class="field">
+            <h2>Actualizar</h2>
+
+            <div class="select">
+                <select name="" id="txt1">
+
+                    <option value="Conta">Conta</option>
+                    <option value="YinExnaider">YinExnaider</option>
+                    <option value="deadman">DEADMAN</option>
+                    <option value="Thiaf">Thiaf</option>
+                    <option value="Patimomo">Patimomo</option>
+                    <option value="Kings">Kings</option>
+                    <option value="Tubal">Tubal</option>
+                    <option value="Skeleton">Skeleton</option>
+                </select>
+            </div>
+        </div>
+
+    </form>
+
+    <br>
+    
+    <div class="actualizar">
+        
+        <div class="l-form">
+            <form action="" class="form">
+                <h1 class="form__title">ESTADISTICAS</h1>
+
+                <div class="form__div">
+                    <input type="text" class="form__input" placeholder=" " id="txtkda">
+                    <label for="" class="form__label">KDA</label>
+                </div>
+
+                <div class="form__div">
+                    <input type="text" class="form__input" placeholder=" " id="txtopscore">
+                    <label for="" class="form__label">OPScore</label>
+                </div>
+
+                <div class="form__div">
+                    <input type="text" class="form__input" placeholder=" " id="txtkillp">
+                    <label for="" class="form__label">Kill Participation</label>
+                </div>
+
+                <div class="form__div">
+                    <input type="text" class="form__input" placeholder=" " id="txtpuntosv">
+                    <label for="" class="form__label">Puntuación de Visión</label>
+                </div>
+
+                <button onclick="actualizar()">
+                    <div>
+                        <span></span>
+                        <a href="#">ACTUALIZAR</a>
+                    </div> 
+                </button>
+            </form>
+        </div>
+        <div class="l-form">
+            <form action="" class="form">
+                <h1 class="form__title">SKILLS</h1>
+
+                <div class="form__div">
+                    <input type="text" class="form__input" placeholder=" " id="txtmicro">
+                    <label for="" class="form__label">MICRO</label>
+                </div>
+
+                <div class="form__div">
+                    <input type="text" class="form__input" placeholder=" " id="txtmacro">
+                    <label for="" class="form__label">MACRO</label>
+                </div>
+
+                <div class="form__div">
+                    <input type="text" class="form__input" placeholder=" " id="txtlanning">
+                    <label for="" class="form__label">LANE</label>
+                </div>
+
+                <button onclick="actualizarD()">
+                    <div>
+                        <span></span>
+                        <a href="#">ACTUALIZAR</a>
+                    </div> 
+                </button>
+            </form>
+        </div>
+
+        <div class="l-form">
+            <form action="" class="form">
+                <h1 class="form__title">GENERAR KDA</h1>
+
+                <div class="form__div">
+                    <input type="text" class="form__input" placeholder=" " id="txtasesinatos">
+                    <label for="" class="form__label">ASESINATOS</label>
+                </div>
+
+                <div class="form__div">
+                    <input type="text" class="form__input" placeholder=" " id="txtasistencias">
+                    <label for="" class="form__label">ASISTENCIAS</label>
+                </div>
+
+                <div class="form__div">
+                    <input type="text" class="form__input" placeholder=" " id="txtmuertes">
+                    <label for="" class="form__label">MUERTES</label>
+                </div>
+
+                <button onclick="actualizarKDA()">
+                    <div>
+                        <span></span>
+                        <a href="#">ACTUALIZAR</a>
+                    </div> 
+                </button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+<!--
+    <input type="button" name="btnconsultar" id="btrconsultar" onclick="ver()" value="ver">
+
+
+    <table id="Tablita">
+        <th>Datos</th>
+    </tr>
+        </table>
+
+        <h4 id="kk">Hola</h4>
+
+        <input type="button" name="btnconsultar" id="btrconsultar" onclick="datosconta()" value="ver">
+        -->
+  </body>
+</body>
+</html>

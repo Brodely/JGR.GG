@@ -1,0 +1,116 @@
+.home-section{
+    height: 100vh;
+    padding-left: 50px;
+    padding-top: 40px;
+    overflow: auto;
+
+}
+
+.progress{
+    margin-left: 250px;
+    height: 220px;
+}
+
+.elos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.elo{
+    padding: 3px 14px 3px 10px;
+    background-color:#393939;
+    font-size: 10px;
+    font-weight: 600;
+    margin-right: 10px;
+    color: #9B9B9B;
+}
+
+.info{
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: -50px;
+}
+
+.img img{
+    margin-right: 15px;
+    width: 150px;
+    border-radius: 0px 50px 0px 0px;
+}
+
+.cuno{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.datos{
+    margin-top: 25px;
+    color: white;
+}
+
+.datos h3{
+    font-size: 25px;
+}
+
+.datos span{
+    font-size: 15px;
+    color: gray;
+    font-weight: 600;
+}
+
+.cdos{
+    margin-left: 60px;
+    width: 30%;
+    color: white;
+}
+
+.cdos span{
+    font-size: 15px;
+}
+
+.cdos p{
+    margin-top: 7px;
+    font-size: 13px;
+    padding-right: 10px;
+    color: gray;
+}
+
+.ctres{
+    margin-left: 60px;
+    color: white;
+}
+
+.ctres span{
+    font-size: 15px;
+}
+
+.ctres p{
+    font-size: 45px;
+    font-weight: 600;
+    color: #F4CE67;
+}
+
+
+.col span{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+table{
+    color: white;
+    margin-top: 5px;
+}
+
+th, td{
+    padding: 5px 10px 5px 0px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.tb{
+    color: #F4D06F;
+}
+
+.estadisticas{
+    padding-bottom: 50px;
+}

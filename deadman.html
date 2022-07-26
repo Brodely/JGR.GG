@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patimomo</title>
+    <link rel="stylesheet" href="estilos/barra.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="estilos/jugador.css">
+    <link rel="stylesheet" href="jugadores-js/dead/stadistics.css">
+    <link rel="stylesheet" href="estilos/skills.css">
+    <link rel="stylesheet" href="estilos/works.css">
+
+    <script src="scripts/barra.js"  defer></script>
+</head>
+<body>
+  <script type="text/javascript" src="sesion.js"></script>
+  <script type="text/javascript" src="bd.js"></script>
+  <script type="text/javascript" src="consultar.js"></script>
+  <script src="jugadores/bd2.js"></script>
+
+    <div class="sidebar close">
+
+        <div class="logo-details">
+          <img src="img/1x/logo-jgr.png" alt="">
+          <span class="logo_name">JGR.GG</span>
+        </div>
+    
+        <ul class="nav-links">
+    
+          <li>
+            <a href="principalinv.html">
+              <i class='bx bx-grid-alt' ></i>
+              <span class="link_name">Jugadores</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Jugadores</a></li>
+            </ul>
+          </li>
+    
+          <li>
+              <a href="rankinginv.html">
+                <i class='bx bx-collection' ></i>
+                <span class="link_name">Ranking</span>
+              </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Ranking</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="https://www.youtube.com/watch?v=2xzBa7WjNSk&list=PLDSXILfy4BHGJhBCUpuZstIgyEl6TueGY" target="_blank">
+              <i class='bx bxl-youtube' ></i>
+              <span class="link_name">Tacticas</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="https://www.youtube.com/watch?v=2xzBa7WjNSk&list=PLDSXILfy4BHGJhBCUpuZstIgyEl6TueGY" target="_blank">Tacticas</a></li>
+            </ul>
+          </li>
+    
+          <li>
+            <a href="index.html">
+              <i class='bx bx-compass' ></i>
+              <span class="link_name">Administrador</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Administrador</a></li>
+            </ul>
+          </li>
+    
+          <li>
+            <div class="profile-details">
+              <div class="profile-content">
+                <img src="img/icon.png" alt="profileImg">
+              </div>
+            <div class="name-job">
+              <div class="profile_name">Jugador</div>
+              <div class="job">Imperial Jaguars</div>
+            </div>
+              <i>
+              </i>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    <section class="home-section">
+        <div class="home-content">
+          <i class='bx bx-menu' ></i>
+          <span class="text"></span>
+          
+        </div>
+        <div class="progress">
+            <div class="container">
+              <div class="circular-progress">
+                  <span class="progress-value">0%</span>
+              </div>
+
+              <span class="text">MICRO</span>
+          </div>
+          <div class="container">
+              <div class="circular-progress2">
+                  <span class="progress-value2">0%</span>
+              </div>
+
+              <span class="text">MACRO</span>
+          </div>
+          <div class="container">
+              <div class="circular-progress3">
+                  <span class="progress-value3">0%</span>
+              </div>
+
+              <span class="text">LANNING</span>
+          </div>
+          </div>
+        </div>
+        <div class="elos">
+            <div class="elo elouno">Master S11</div>
+            <div class="elo elodos">Grandmaster S12</div>
+        </div>
+        <div class="info">
+          <div class="cuno">
+            <div class="img">
+              <img src="img/iconjugador/dead.webp" alt="">
+            </div>
+            <div class="datos">
+              <h3>JGR DEADMAN</h3>
+              <span>Midlaner</span>
+            </div>
+          </div>
+          <div class="cdos">
+              <span>Descripción</span>
+              <p id="verdescripcion">NULL
+              </p>
+          </div>
+          <div class="ctres">
+              <span>KDA</span>
+              <p id="kda1">4.54:1</p>
+          </div>
+        </div>
+
+        <div class="estadisticas">
+          <div class="col coluno">
+            <span>Descripción:</span>
+            <table>
+              <tr>
+                <td>Op Score:</td>
+                <td class="tb" id="verops">8.91</td>
+              </tr>
+              <tr>
+                <td>KDA:</td>
+                <td class="tb" id="kda2">11.91:1</td>
+              </tr>
+              <tr>
+                <td>Puntos de visión:</td>
+                <td class="tb" id="verpuntosv">112</td>
+              </tr>
+              <tr>
+                <td>Kills Participation:</td>
+                <td class="tb" id="verkillp">80%</td>
+              </tr>
+            </table>
+          </div>
+          <div class=" col coldos">
+            <span>Tareas semanales</span>
+            <div class="container-works">
+              <div class="skill-box">
+                  <span class="title">1</span>
+      
+                  <div class="skill-bar">
+                      <span class="skill-per html">
+                          <span class="tooltip">Pendiente</span>
+                      </span>
+                  </div>
+              </div>
+      
+              <div class="skill-box">
+                  <span class="title">2</span>
+      
+                  <div class="skill-bar">
+                      <span class="skill-per css">
+                          <span class="tooltip">Completada</span>
+                      </span>
+                  </div>
+              </div>
+              <div class="skill-box">
+                  <span class="title">3</span>
+      
+                  <div class="skill-bar">
+                      <span class="skill-per javascript">
+                          <span class="tooltip">Pendiente</span>
+                      </span>
+                  </div>
+              </div>
+          </div>
+          </div>
+          <div class="col coltres">
+            <center>
+              <div class="container">
+                <div class="circular-progresss">
+                    <span class="progress-values">0%</span>
+                </div>
+  
+                <span class="textn">LEVEL</span>
+              </div>
+            </center>
+            
+          </div>
+          <div class="col colcuatro">
+            <span>Pool Champ</span>
+            <div class="campeones">
+              <div class="campeon campeon1"></div>
+              <div class="campeon campeon2"></div>
+              <div class="campeon campeon3"></div>
+              <div class="campeon campeon4"></div>
+              <div class="campeon campeon5"></div>
+              <div class="campeon campeon6"></div>
+              <div class="campeon campeon7"></div>
+              <div class="campeon campeon8"></div>
+              <div class="campeon campeon9"></div>
+              <div class="campeon campeon10"></div>
+            </div>
+          </div>
+        </div>
+
+        <center>
+          <table id="Tabla">
+          
+              <th >Usuario</th>
+          </table>
+          <select name="" id="playern">
+            <option value="DEADMAN"></option>
+          </select>
+          
+      </center>
+    </section>
+
+    <script src="scripts/progress.js"></script>
+    <script>
+      document.getElementById("Tabla").style.display="none";
+      document.getElementById("playern").style.display="none";
+      </script>
+</body>
+</html>

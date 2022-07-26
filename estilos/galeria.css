@@ -1,0 +1,71 @@
+/* FUENTE */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap');
+
+.container{
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 10px;
+}
+.container .search-box{
+    height: 42px;
+    max-width: 400px;
+    margin-bottom: 30px;
+}
+.search-box input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: #27272B;
+    padding: 0 15px 0px 45px;
+    color: #fff;
+}
+.search-box i{
+    position: absolute;
+    z-index: 2;
+    color: white;
+    top: 50%;
+    left: 15px;
+    font-size: 20px;
+    transform: translateY(-50%);
+}
+
+.container{
+    width: 500px;
+    height: 44px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left:20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.roles{
+    background-color: #2b2b27;
+    height: 44px;
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.roles a{
+    padding: 5px;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 8px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.roles a:hover{
+    color: #F4D06F;
+}

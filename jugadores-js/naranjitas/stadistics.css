@@ -1,0 +1,122 @@
+.home-section{
+    background-image: url(../../img/fjugador/naranjitas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.estadisticas{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -15px;
+    padding-top: 60px;
+    margin-left: -50px;
+    padding-left: 50px;
+    padding-bottom: 40px;
+    background-color: black;
+}
+
+.col{
+    color: white;
+    padding: 0px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.coluno{
+    width: 20%;
+    margin-right: 40px;
+}
+
+.coldos{
+    width: 20%;
+}
+
+.coltres{
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 18%;
+}
+
+.colcuatro{
+    margin-left: 40px;
+    width: 25%
+}
+
+.campeones{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0;
+}
+
+.campeon{
+    margin-bottom: 5px;
+    width: 45px;
+    height: 45px;
+}
+
+.campeon1{
+    background: url(../../img/champs/CamilleSquare.webp);
+    background-size: cover;
+}
+
+.campeon2{
+    background: url(../../img/champs/GnarSquare.webp);
+    background-size: cover;
+}
+
+.campeon3{
+    background: url(../../img/champs/JayceSquare.webp);
+    background-size: cover;
+}
+
+.campeon4{
+    background: url(../../img/champs/IreliaSquare.webp);
+    background-size: cover;
+}
+
+.campeon5{
+    background: url(../../img/champs/AatroxSquare.webp);
+    background-size: cover;
+}
+
+.campeon6{
+    background: url(../../img/champs/GravesSquare.webp);
+    background-size: cover;
+}
+
+.campeon7{
+    background: url(../../img/champs/GwenSquare.webp);
+    background-size: cover;
+}
+
+.campeon8{
+    background: url(../../img/champs/MordekaiserSquare.webp);
+    background-size: cover;
+}
+
+.campeon9{
+    background: url(../../img/champs/VladimirSquare.webp);
+    background-size: cover;
+}
+
+.campeon10{
+    background: url(../../img/champs/GangplankSquare.webp);
+    background-size: cover;
+}
+
+.home-section::-webkit-scrollbar{
+    width: 12px;
+}
+
+.home-section::-webkit-scrollbar-track{
+    background: black;
+}
+
+.home-section::-webkit-scrollbar-thumb{
+    background-color: rgb(245, 143, 48);
+    border-radius: 10px;
+}
+
+
